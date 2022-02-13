@@ -11,7 +11,7 @@ public class Utils {
             return "--push";
         }
         String tempDir = System.getProperty("java.io.tmpdir");
-        String keepLocally = String.format("-o type=tar,dest=%s%s%s", tempDir, File.separator, "out.tar");
+        String keepLocally = String.format("-o type=tar,dest=%s%s", tempDir, "out.tar");
         return keepLocally;
     }
 }
